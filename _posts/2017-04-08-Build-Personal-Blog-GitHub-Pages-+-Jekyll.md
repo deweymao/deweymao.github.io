@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Build Personal Blog: GitHub Pages + Jekyll"
+date:   2017-04-08 23:36:51 +0800
+author: Dewey Mao
+categories: Jekyll
+---
+
+## 1 安装开发工具
+  
+### 1.1 Install <a href="https://git-scm.com/about" target="_blank">Git</a> for Windows: 
+- <a href="https://git-scm.com/downloads" target="_blank">Download Git</a>
+- <a href="https://git-scm.com/docs" target="_blank">Git Reference</a>
+  
+### 1.2 Install <a href="http://www.ruby-lang.org/zh_cn/" target="_blank">Ruby</a> for Windows:
+- <a href="http://rubyinstaller.org/downloads/" target="_blank">Download Ruby 2.0 and above</a>
+- <a href="http://rubyinstaller.org/downloads/" target="_blank">Download DevKit</a>
+
+```
+验证Ruby安装是否正确
+ruby -v 
+进入DevKit的安装目录
+ruby dk.rb init
+运行后生成config.yml文件，行末添加ruby的安装路径，例如：
+- D:\Jekyll\Ruby22-x64
+接着
+ruby dk.rb install 
+```
+  
+### 1.3 Install <a href="http://jekyll.com.cn/" target="_blank">Jekyll</a> for Windows:
+
+```
+翻墙
+gem install bundler
+gem install jekyll
+```
+
+## 2 使用Jekyll创建Blog
+
+```
+~ $ jekyll new my-awesome-site 
+~ $ cd my-awesome-site 
+~/my-awesome-site $ jekyll serve 
+# => Now browse to http://localhost:4000 
+```
+
+<a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
+
+## 3 Create GitHub repository for your blog
+参考: [GitHub Pages](https://pages.github.com/)
+
+## 4 使用Markdown书写blog
+
+## 5 提交到GitHub Repository
+
+
+
+
