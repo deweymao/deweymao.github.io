@@ -17,20 +17,20 @@ categories: Jekyll
 - <a href="http://rubyinstaller.org/downloads/" target="_blank">Download DevKit</a>
 
 ```
-验证Ruby安装是否正确
+#验证Ruby安装是否正确
 ruby -v 
-进入DevKit的安装目录
+#进入DevKit的安装目录
 ruby dk.rb init
-运行后生成config.yml文件，行末添加ruby的安装路径，例如：
+#运行后生成config.yml文件，行末添加ruby的安装路径，例如：
 - D:\Jekyll\Ruby22-x64
-接着
+#接着
 ruby dk.rb install 
 ```
   
 ### 1.3 Install <a href="http://jekyll.com.cn/" target="_blank">Jekyll</a> for Windows:
 
 ```
-翻墙
+#翻墙
 gem install bundler
 gem install jekyll
 ```
@@ -38,20 +38,34 @@ gem install jekyll
 ## 2 使用Jekyll创建Blog
 
 ```
-~ $ jekyll new my-awesome-site 
-~ $ cd my-awesome-site 
-~/my-awesome-site $ jekyll serve 
+jekyll new my-awesome-site 
+cd my-awesome-site 
+jekyll serve 
 # => Now browse to http://localhost:4000 
 ```
 
 <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
 
 ## 3 Create GitHub repository for your blog
-参考: [GitHub Pages](https://pages.github.com/)
+参考: <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 
 ## 4 使用Markdown书写blog
+<a href="http://www.appinn.com/markdown/" target="_blank">Markdown语法</a>
 
 ## 5 提交到GitHub Repository
+
+```
+#克隆到本地
+git clone https://github.com/username/username.github.io
+#查看文件修改状态
+git status
+#添加文件
+git add --all
+#提交并写注释
+git commit -m '注释'
+#push到master分支
+git push -u origin master
+```
 
 
 
