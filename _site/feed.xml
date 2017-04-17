@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-17T13:06:50+08:00</updated><id>http://localhost:4000/</id><title type="html">Dewey Mao</title><subtitle>Powered by Jekyll
+</subtitle><entry><title type="html">Test</title><link href="http://localhost:4000/c/2017/04/08/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-04-08T23:36:51+08:00</published><updated>2017-04-08T23:36:51+08:00</updated><id>http://localhost:4000/c/2017/04/08/test</id><content type="html" xml:base="http://localhost:4000/c/2017/04/08/test.html">&lt;h2 id=&quot;1-安装开发工具&quot;&gt;1 安装开发工具&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-install-git-for-windows&quot;&gt;1.1 Install &lt;a href=&quot;https://git-scm.com/about&quot; target=&quot;_blank&quot;&gt;Git&lt;/a&gt; for Windows:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot;&gt;Download Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/docs&quot; target=&quot;_blank&quot;&gt;Git Reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-install-ruby-for-windows&quot;&gt;1.2 Install &lt;a href=&quot;http://www.ruby-lang.org/zh_cn/&quot; target=&quot;_blank&quot;&gt;Ruby&lt;/a&gt; for Windows:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;Download Ruby 2.0 and above&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;Download DevKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#验证Ruby安装是否正确
+ruby -v 
+#进入DevKit的安装目录
+ruby dk.rb init
+#运行后生成config.yml文件，行末添加ruby的安装路径，例如：
+- D:\Jekyll\Ruby22-x64
+#接着
+ruby dk.rb install 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;13-install-jekyll-for-windows&quot;&gt;1.3 Install &lt;a href=&quot;http://jekyll.com.cn/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; for Windows:&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#翻墙
+gem install bundler
+gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;2-使用jekyll创建blog&quot;&gt;2 使用Jekyll创建Blog&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new my-awesome-site 
+cd my-awesome-site 
+jekyll serve 
+# =&amp;gt; Now browse to http://localhost:4000 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot; target=&quot;_blank&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-create-github-repository-for-your-blog&quot;&gt;3 Create GitHub repository for your blog&lt;/h2&gt;
+&lt;p&gt;参考: &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-使用markdown书写blog&quot;&gt;4 使用Markdown书写blog&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.appinn.com/markdown/&quot; target=&quot;_blank&quot;&gt;Markdown语法&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-提交到github-repository&quot;&gt;5 提交到GitHub Repository&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#克隆到本地
+git clone https://github.com/username/username.github.io
+#查看文件修改状态
+git status
+#添加文件
+git add --all
+#提交并写注释
+git commit -m '注释'
+#push到master分支
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Dewey Mao</name></author><summary type="html">1 安装开发工具 1.1 Install Git for Windows: Download Git Git Reference 1.2 Install Ruby for Windows: Download Ruby 2.0 and above Download DevKit</summary></entry><entry><title type="html">Build Personal Blog: GitHub Pages + Jekyll</title><link href="http://localhost:4000/jekyll/2017/04/08/build_personal_blog.html" rel="alternate" type="text/html" title="Build Personal Blog: GitHub Pages + Jekyll" /><published>2017-04-08T23:36:51+08:00</published><updated>2017-04-08T23:36:51+08:00</updated><id>http://localhost:4000/jekyll/2017/04/08/build_personal_blog</id><content type="html" xml:base="http://localhost:4000/jekyll/2017/04/08/build_personal_blog.html">&lt;h2 id=&quot;1-安装开发工具&quot;&gt;1 安装开发工具&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-install-git-for-windows&quot;&gt;1.1 Install &lt;a href=&quot;https://git-scm.com/about&quot; target=&quot;_blank&quot;&gt;Git&lt;/a&gt; for Windows:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot;&gt;Download Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/docs&quot; target=&quot;_blank&quot;&gt;Git Reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-install-ruby-for-windows&quot;&gt;1.2 Install &lt;a href=&quot;http://www.ruby-lang.org/zh_cn/&quot; target=&quot;_blank&quot;&gt;Ruby&lt;/a&gt; for Windows:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;Download Ruby 2.0 and above&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;Download DevKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#验证Ruby安装是否正确
+ruby -v 
+#进入DevKit的安装目录
+ruby dk.rb init
+#运行后生成config.yml文件，行末添加ruby的安装路径，例如：
+- D:\Jekyll\Ruby22-x64
+#接着
+ruby dk.rb install 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;13-install-jekyll-for-windows&quot;&gt;1.3 Install &lt;a href=&quot;http://jekyll.com.cn/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; for Windows:&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#翻墙
+gem install bundler
+gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;2-使用jekyll创建blog&quot;&gt;2 使用Jekyll创建Blog&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new my-awesome-site 
+cd my-awesome-site 
+jekyll serve 
+# =&amp;gt; Now browse to http://localhost:4000 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot; target=&quot;_blank&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-create-github-repository-for-your-blog&quot;&gt;3 Create GitHub repository for your blog&lt;/h2&gt;
+&lt;p&gt;参考: &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-使用markdown书写blog&quot;&gt;4 使用Markdown书写blog&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.appinn.com/markdown/&quot; target=&quot;_blank&quot;&gt;Markdown语法&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-提交到github-repository&quot;&gt;5 提交到GitHub Repository&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#克隆到本地
+git clone https://github.com/username/username.github.io
+#查看文件修改状态
+git status
+#添加文件
+git add --all
+#提交并写注释
+git commit -m '注释'
+#push到master分支
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Dewey Mao</name></author><summary type="html">1 安装开发工具 1.1 Install Git for Windows: Download Git Git Reference 1.2 Install Ruby for Windows: Download Ruby 2.0 and above Download DevKit</summary></entry></feed>
