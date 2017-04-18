@@ -31,16 +31,8 @@ encoding: utf-8
 
 gems:
   - jekyll-feed
-  - jekyll-archives
 
 exclude:
   - Gemfile
   - Gemfile.lock
   
-# jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: category_archives
-  permalinks:
-    category: /categories/:name/

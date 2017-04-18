@@ -13,12 +13,15 @@ layout: default
    {% for post in site.posts %}
     <li>
 	
-	 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-	 {% if post.categories != empty %} • {% include category_links.html categories=post.categories %}
+	 <span class="post-meta">
+	 {% if post.categories != empty %}
+	 {{ post.categories }} •  
 	 {% endif %}
+	 {{ post.date | date: "%b %-d, %Y" }}
 	 </span>
 	 
      <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+
     </li>
    {% endfor %}
   </ul>
