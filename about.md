@@ -6,10 +6,10 @@ permalink: /about/
 
 <div>
 {% if site.github_username %}
-	<p>{% include icon-github.html username=site.github_username %}</p>
+<p>{% include icon-github.html username=site.github_username %}</p>
 {% endif %}
 {% if site.email %}
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 {% endif %}
 </div>
 
