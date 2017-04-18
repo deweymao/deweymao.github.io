@@ -4,15 +4,17 @@
 
     <a class="site-title" href="{{ "/" | relative_url}}"> <img src="/pics/deweymao.jpg" alt="Dewey Mao"/> {{ site.title | escape }}</a>
 
-   <nav class="site-nav">
+    <nav class="site-nav">
+	 <div class="trigger">
       {% for link in site.data.navigation.main %}
         {% if link.url contains "http" %}
           {% assign url = link.url %}
         {% else %}
           {% assign url = link.url | relative_url %}
         {% endif %}
-        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
+        <a class="page-link" href="{{ url | relative_url }}">{{ link.title | escape }}</a>
       {% endfor %}
+	 </div>
     </nav>
 
   </div>
