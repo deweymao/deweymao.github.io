@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Build Personal Blog: GitHub Pages + Jekyll"
-date:   2017-04-08 23:36:51 +0800
+date:   2017-04-07 23:36:51 +0800
 author: Dewey Mao
 categories: Jekyll
 ---

@@ -6,12 +6,13 @@ layout: default
   <header class="archive-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
-  <p align="right"><a href="/archive_category">sort by category</a></p>
+  <p align="right"><a href="/archive">sort by date</p>
   
   {{ content }}
   
-  <ul class="post-list">
-   {% for post in site.posts %}
+  {% for category in site.categories %}
+   <ul class="post-list">
+   {% for post in category.last %}
     <li>
 	 <span class="post-meta">
 	 {% if post.categories != empty %}
@@ -22,6 +23,7 @@ layout: default
      <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
     </li>
    {% endfor %}
-  </ul>
+   </ul>
+  {% endfor %}
 
 </div>
