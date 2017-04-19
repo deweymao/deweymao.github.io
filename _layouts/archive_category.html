@@ -5,9 +5,9 @@ layout: default
 
   <header class="archive-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+	<p align="right"><a href="/archive">[sort by date]</p>
   </header>
-  <p align="right"><a href="/archive">sort by date</p>
-  
+    
   {{ content }}
   
   {% for category in site.categories %}

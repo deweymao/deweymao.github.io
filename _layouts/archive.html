@@ -5,19 +5,19 @@ layout: default
 
   <header class="archive-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+	<p align="right"><a href="/archive_category">[sort by category]</a></p>
   </header>
-  <p align="right"><a href="/archive_category">sort by category</a></p>
-  
+   
   {{ content }}
   
   <ul class="post-list">
    {% for post in site.posts %}
     <li>
 	 <span class="post-meta">
-	 {% if post.categories != empty %}
-	 {{ post.categories }} •  
-	 {% endif %}
 	 {{ post.date | date: "%b %-d, %Y" }}
+	 {% if post.categories != empty %}
+	  •  {{ post.categories }}
+	 {% endif %}
 	 </span>
      <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
     </li>
