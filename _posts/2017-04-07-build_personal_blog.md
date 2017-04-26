@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Build Personal Blog: GitHub Pages + Jekyll"
 date:   2017-04-07 23:36:51 +0800
@@ -42,6 +42,8 @@ jekyll new my-awesome-site
 cd my-awesome-site 
 jekyll serve 
 # => Now browse to http://localhost:4000 
+#显示默认主题minima的位置
+bundle show minima
 ```
 
 <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
@@ -62,7 +64,7 @@ git status
 #添加文件
 git add --all
 #提交并写注释
-git commit -m '注释'
+git commit -m "注释"
 #push到master分支
 git push -u origin master
 ```
