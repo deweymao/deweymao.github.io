@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "Build Personal Blog: GitHub Pages + Jekyll"
 date:   2017-04-07 23:36:51 +0800
@@ -42,7 +42,7 @@ jekyll new my-awesome-site
 cd my-awesome-site 
 jekyll serve 
 # => Now browse to http://localhost:4000 
-#显示默认主题minima的位置
+#显示默认安装主题minima
 bundle show minima
 ```
 
