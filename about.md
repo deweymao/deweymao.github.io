@@ -11,6 +11,7 @@ permalink: /about/
 {% if site.email %}
 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 {% endif %}
+<p class="rss-subscribe">Subscribe <a href="{{"/feed.xml" | relative_url }}"> via RSS</a></p>
 </div>
 
 You can find the source code for this website at
