@@ -6,6 +6,13 @@ layout: default
   <header class="archive-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
 	<p align="right"><a href="/archive"> Sort by Date </p>
+	<p>
+	{% for category in site.categories %}
+	{% increment category_index %}
+	 <a href="#{{category_index}}">{{category.first }}
+	
+	{% endfor %}
+	</p>
   </header>
     
   {{ content }}
