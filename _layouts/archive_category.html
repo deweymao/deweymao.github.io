@@ -5,20 +5,19 @@ layout: default
 
   <header class="archive-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-	<p align="right"><a href="/archive"> Sort by Date </p>
-	<p>
+	<span class = "post-meta">
+	Categories:
 	{% for category in site.categories %}
-	{% increment category_index %}
-	 <a href="#{{category_index}}">{{category.first }}
-	
+	 &nbsp <a href="#{{category.first}}">{{category.first }}</a>
 	{% endfor %}
-	</p>
+	</span>
+	<p align="right"><a href="/archive"> Sort by Date </p>
   </header>
     
   {{ content }}
   
   {% for category in site.categories %}
-   <ul class="post-list">
+   <ul class="post-list" id={{category.first}}>
    {% for post in category.last %}
     <li>
 	 <span class="post-meta">
