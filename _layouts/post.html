@@ -19,6 +19,15 @@ layout: default
     {{ content }}
   </div>
 
+  <p align="right">
+   {% if page.next %}
+    <a href="{{ site.url }}{{ page.next.url }}"> Previous </a> &nbsp &nbsp
+   {% endif %}
+   {% if page.previous %}
+    <a href="{{ site.url }}{{ page.previous.url }}"> Next </a> 
+   {% endif %}
+  </p>
+
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
