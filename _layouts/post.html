@@ -20,12 +20,20 @@ layout: default
   </div>
 
   <p align="right">
-   {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}"> Previous </a> &nbsp &nbsp
+   {% if page.previous and page.next %}
+    <a href="{{ site.url }}{{ page.previous.url }}"> Previous </a> &nbsp &nbsp
+	<a href="{{ site.url }}{{ page.next.url }}"> Next </a> 
+   {% elsif page.previous and page.next == nil %}
+    <a href="{{ site.url }}{{ page.previous.url }}"> Previous </a> &nbsp &nbsp
+	<font color="gray">Next</font>
+   {% elsif page.previous == nil and page.next %}
+    <font color="gray">Previous</font> &nbsp &nbsp
+	<a href="{{ site.url }}{{ page.next.url }}"> Next </a> 
+   {% else %}
+    <font color="gray">Previous</font> &nbsp &nbsp
+    <font color="gray">Next</font>
    {% endif %}
-   {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}"> Next </a> 
-   {% endif %}
+  
   </p>
 
   {% if site.disqus.shortname %}
