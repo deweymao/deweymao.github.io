@@ -46,7 +46,8 @@ jekyll serve
 bundle show minima
 ```
 
-<a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
+- <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
+- <a href="https://liquid.bootcss.com/" target="_blank">Liquid模板语言</a>
 
 ## 3 Create GitHub repository for your blog
 参考: <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
