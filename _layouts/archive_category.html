@@ -8,7 +8,7 @@ layout: default
 	<span class = "post-meta">
 	Categories:
 	{% for category in site.categories %}
-	 &nbsp <a href="#{{category.first}}">{{category.first }}</a>
+	 &nbsp <a href="#{{category.first}}">{{category.first }}({{ category | last | size }})</a>
 	{% endfor %}
 	</span>
 	<p align="right"><a href="/archive"> Sort by Date </p>
