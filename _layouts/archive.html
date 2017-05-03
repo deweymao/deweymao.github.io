@@ -7,13 +7,22 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
 	<span class = "post-meta">
 	Dates:
+	<script type="text/javascript">	var count = 0; </script>
 	{% for post in site.posts %}
 	{% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
 	 {% if year != y %}
+	  {% if year %}
+	   &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+	  {% endif %}
 	  {% assign year = y %}
-	   &nbsp <a href="#{{y}}">{{ y }}</a>
+	  <script type="text/javascript"> count = 1; </script>
+	 {% else %}
+	  <script type="text/javascript"> count++; </script>
 	 {% endif %}
 	{% endfor %}
+    {% if year %}
+	 &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+	{% endif %}
 	</span>
 	<p align="right"><a href="/archive_category"> Sort by Category </a></p>
   </header>
