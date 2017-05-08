@@ -4,7 +4,7 @@ layout: default
 <div class="archive">
 
   <header class="archive-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="page-title">{{ page.title | escape }}</h1>
 	<span class = "post-meta">
 	Categories:
 	{% for category in site.categories %}
@@ -26,7 +26,7 @@ layout: default
 	 {% endif %}
 	 {{ post.date | date: "%b %-d, %Y" }}
 	 </span>
-     <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <h2> <a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} {% if post.subtitle %} <br> {{ post.subtitle }} {% endif %} </a> </h2>
     </li>
    {% endfor %}
    </ul>
