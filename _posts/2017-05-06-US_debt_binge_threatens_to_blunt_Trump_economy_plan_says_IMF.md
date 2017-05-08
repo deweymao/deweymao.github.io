@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "US debt binge threatens to blunt Trump economy plan, says IMF IMF：美国财政扩张或致企业难以偿债"
-date:   2017-05-06 02:00:00 +0800
+date:   2017-05-06 06:00:00 +0800
 author: Financial Times
 categories: BilingualReading
 ---

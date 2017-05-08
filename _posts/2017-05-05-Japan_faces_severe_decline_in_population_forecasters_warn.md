@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Japan faces severe decline in population, forecasters warn 预测：日本面临严重人口减少"
-date:   2017-05-05 02:00:00 +0800
+date:   2017-05-05 06:00:00 +0800
 author: Financial Times
 categories: BilingualReading
 ---
