@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "EU gives US leeway on climate targets 欧盟：履行巴黎协议 美国可走自己的路"
-date:   2017-05-04 06:00:00 +0800
+date:   2017-05-04 06:00:00
 author: Financial Times
 categories: BilingualReading
 ---

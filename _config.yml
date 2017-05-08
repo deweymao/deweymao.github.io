@@ -27,6 +27,8 @@ theme: minima
 
 encoding: utf-8
 
+timezone: Asia/Shanghai
+
 gems:
   - jekyll-feed
 

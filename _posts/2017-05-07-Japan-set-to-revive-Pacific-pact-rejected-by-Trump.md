@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Japan set to revive Pacific pact rejected by Trump 日本打算重启TPP"
-date:   2017-05-07 06:00:00 +0800
+date:   2017-05-07 06:00:00
 author: Financial Times
 categories: BilingualReading
 ---
