@@ -6,7 +6,7 @@ author: Dewey Mao
 categories: Jekyll
 ---
 
-## 1 安装开发工具
+## 1 Install Development Tools
   
 ### 1.1 Install <a href="https://git-scm.com/about" target="_blank">Git</a> for Windows: 
 - <a href="https://git-scm.com/downloads" target="_blank">Download Git</a>
@@ -17,56 +17,55 @@ categories: Jekyll
 - <a href="http://rubyinstaller.org/downloads/" target="_blank">Download DevKit</a>
 
 ```
-#验证Ruby安装是否正确
+#check ruby installation
 ruby -v 
-#进入DevKit的安装目录
+#go to DevKit installation directory
 ruby dk.rb init
-#运行后生成config.yml文件，行末添加ruby的安装路径，例如：
+#generate config.yml file, add the installation path of ruby at the end of line, for example: 
 - D:\Jekyll\Ruby22-x64
-#接着
+#then
 ruby dk.rb install 
 ```
   
 ### 1.3 Install <a href="http://jekyll.com.cn/" target="_blank">Jekyll</a> for Windows:
 
 ```
-#翻墙
 gem install bundler
 gem install jekyll
 ```
 
-## 2 使用Jekyll创建Blog
+## 2 Create a Blog by Jekyll
 
 ```
 jekyll new my-awesome-site 
 cd my-awesome-site 
 jekyll serve 
 # => Now browse to http://localhost:4000 
-#显示默认安装主题minima
+#display default theme: minima
 bundle show minima
 ```
 
 - <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a>
-- <a href="https://liquid.bootcss.com/" target="_blank">Liquid模板语言</a>
+- <a href="https://liquid.bootcss.com/" target="_blank">Liquid Template Language</a>
 
 ## 3 Create GitHub repository for your blog
-参考: <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+Reference: <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 
-## 4 使用Markdown书写blog
-<a href="http://www.appinn.com/markdown/" target="_blank">Markdown语法</a>
+## 4 Write Blogs by Markdown
+<a href="http://www.appinn.com/markdown/" target="_blank">Markdown Gammar</a>
 
-## 5 提交到GitHub Repository
+## 5 Commit to GitHub Repository
 
 ```
-#克隆到本地
+#clone to local
 git clone https://github.com/username/username.github.io
-#查看文件修改状态
+#check files status
 git status
-#添加文件
+#add files modified
 git add --all
-#提交并写注释
-git commit -m "注释"
-#push到master分支
+#commit with comment
+git commit -m "comment"
+#push to master branch
 git push -u origin master
 ```
 
