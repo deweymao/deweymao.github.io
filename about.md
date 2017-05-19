@@ -3,8 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-<div>
+### Nice to Meet You!
 {% if site.github_username %}
 <p>{% include icon-github.html username=site.github_username %}</p>
 {% endif %}
@@ -12,8 +11,20 @@ permalink: /about/
 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 {% endif %}
 <p class="rss-subscribe">Subscribe <a href="{{"/feed.xml" | relative_url }}"> via RSS</a></p>
-</div>
 
 You can find the source code for this website at
 {% include icon-github.html username="deweymao" %} /
 [deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
+
+### Thanks for Your Support!
+If this site is helpful to you, and you are willing to support me to do better, please let your money become more valuable. thank you!
+<table>
+ <tr>
+  <td align="center"><img src="{{ site.url }}/assets/pics/alipay.png" alt="AliPay"/></td>
+  <td align="center"><img src="{{ site.url }}/assets/pics/wxpay.png" alt="WeChatPay"/></td>
+ </tr>
+ <tr>
+  <td align="center">donation by Alipay</td>
+  <td align="center">donation by Wechat Pay</td>
+ </tr>
+</table>

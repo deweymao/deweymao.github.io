@@ -68,7 +68,9 @@ git commit -m "comment"
 #push to master branch
 git push -u origin master
 ```
-
-
+## 6 Source Of My Website
+You can find the source code for this website at
+{% include icon-github.html username="deweymao" %} /
+[deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
 
 
