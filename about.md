@@ -25,6 +25,6 @@ If this site is helpful to you, and you are willing to support me to do better, 
  </tr>
  <tr>
   <td align="center">donation by Alipay</td>
-  <td align="center">donation by Wechat Pay</td>
+  <td align="center">donation by WeChatpay</td>
  </tr>
 </table>

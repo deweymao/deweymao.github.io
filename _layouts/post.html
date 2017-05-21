@@ -22,7 +22,7 @@ layout: default
 
   <p align="right">	<a href="{{site.url}}/about/"> <b>Support me</b></a></p>
 
-  <p align="center">
+  <p align="center"><b>
    {% if page.previous and page.next %}
     <a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
 	<a href="{{ site.url }}{{ page.next.url }}"> Next→ </a> 
@@ -36,7 +36,7 @@ layout: default
     <font color="gray">←Previous</font> &nbsp | &nbsp
     <font color="gray">Next→</font>
    {% endif %}
-  </p>
+  </b></p>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}

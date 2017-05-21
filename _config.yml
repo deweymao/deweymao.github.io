@@ -29,6 +29,9 @@ encoding: utf-8
 
 timezone: Asia/Shanghai
 
+disqus:
+ shortname: deweymao
+
 gems:
   - jekyll-feed
 
