@@ -18,13 +18,19 @@ You can find the source code for this website at
 
 ### Thanks for Your Support!
 If this site is helpful to you, and you are willing to support me to do better, please let your money become more valuable. thank you!
+
+<div style="float:left">
 <table>
  <tr>
-  <td align="center"><img src="{{ site.url }}/assets/pics/alipay.png" alt="AliPay"/></td>
-  <td align="center"><img src="{{ site.url }}/assets/pics/wxpay.png" alt="WeChatPay"/></td>
- </tr>
- <tr>
-  <td align="center">donation by Alipay</td>
-  <td align="center">donation by WeChatpay</td>
+  <td align="center"><img src="{{ site.url }}/assets/pics/alipay.png" alt="AliPay"/><p>donation by Alipay</p></td>
  </tr>
 </table>
+</div>
+
+<div style="float:right">
+<table>
+  <tr>
+  <td align="center"><img src="{{ site.url }}/assets/pics/wxpay.png" alt="WeChatPay"/><p>donation by WeChatpay</p></td>
+ </tr>
+</table>
+</div>
