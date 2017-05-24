@@ -38,8 +38,15 @@ layout: default
    {% endif %}
   </b></p>
 
+{% if site.comments.provider and page.comments != false %}
+ {% case site.comments.provider %}
+ {% when "disqus" %}
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+ {% when "uyan" %}
+  {% include uyan_comments.html %}
+ {% endcase %}
+{% endif %}
 
 </article>

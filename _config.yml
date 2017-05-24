@@ -29,6 +29,11 @@ encoding: utf-8
 
 timezone: Asia/Shanghai
 
+# provider: uyan
+# provider: disqus
+comments:
+ provider: uyan
+
 disqus:
  shortname: deweymao
 
