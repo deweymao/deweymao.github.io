@@ -32,7 +32,7 @@ timezone: Asia/Shanghai
 # provider: uyan
 # provider: disqus
 comments:
- provider: uyan
+ provider: disqus
 
 disqus:
  shortname: deweymao
