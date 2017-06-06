@@ -5,39 +5,46 @@ layout: default
 
   <header class="archive-header">
     <h1 class="page-title">{{ page.title | escape }}</h1>
-	<span class = "post-meta">
-	Dates:
-	<script type="text/javascript">	var count = 0; </script>
-	{% for post in site.posts %}
-	{% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
-	 {% if year != y %}
-	  {% if year %}
-	   &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+	<div class = "post-meta">
+	 Dates:
+	 <script type="text/javascript">	var count = 0; </script>
+	 {% for post in site.posts %}
+	 {% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+	   {% if year %}
+	    &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+	   {% endif %}
+	   {% assign year = y %}
+	   <script type="text/javascript"> count = 1; </script>
+	  {% else %}
+	   <script type="text/javascript"> count++; </script>
 	  {% endif %}
-	  {% assign year = y %}
-	  <script type="text/javascript"> count = 1; </script>
-	 {% else %}
-	  <script type="text/javascript"> count++; </script>
+	 {% endfor %}
+     {% if year %}
+	  &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
 	 {% endif %}
-	{% endfor %}
-    {% if year %}
-	 &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
-	{% endif %}
-	</span>
-	<p align="right"><a href="/archive_category"> Sort by Category </a></p>
+	 <p align="right"><a href="/archive_category"> Sort by Category </a></p>
+	</div>
   </header>
    
   {{ content }}
   
-  <ul class="post-list">
+   {% assign year = 0 %}
    {% for post in site.posts %}
     {% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
-	 {% if year != y %}
-	  {% assign year = y %}
-      <li id={{ y }}>
-     {% else %}
-	  <li>
+	{% if year != y %}
+	 {% if year != 0 %}
+	  </ul>
 	 {% endif %}
+	 {% assign year = y %}
+	 <div class = "post-meta" align="right" id={{ y }}>
+      {{ y }}
+      <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+     </div>
+     <ul class="post-list">
+    {% endif %}
+
+	<li>
 	 <span class="post-meta">
 	 {{ post.date | date: "%b %-d, %Y" }}
 	 {% if post.categories != empty %}
@@ -46,6 +53,7 @@ layout: default
 	 </span>
      <h2> <a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} {% if post.subtitle %} <br> {{ post.subtitle }} {% endif %} </a> </h2>
     </li>
+
    {% endfor %}
   </ul>
 

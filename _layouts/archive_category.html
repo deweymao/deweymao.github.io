@@ -5,19 +5,24 @@ layout: default
 
   <header class="archive-header">
     <h1 class="page-title">{{ page.title | escape }}</h1>
-	<span class = "post-meta">
-	Categories:
-	{% for category in site.categories %}
-	 &nbsp <a href="#{{category.first}}">{{category.first }}({{ category | last | size }})</a>
-	{% endfor %}
-	</span>
-	<p align="right"><a href="/archive"> Sort by Date </p>
+	<div class = "post-meta">
+	 Categories:
+	 {% for category in site.categories %}
+	  &nbsp <a href="#{{category.first}}">{{category.first }}({{ category | last | size }})</a>
+	 {% endfor %}
+	 <p align="right"><a href="/archive"> Sort by Date </a></p>
+	</div>
+	
   </header>
     
   {{ content }}
   
   {% for category in site.categories %}
-   <ul class="post-list" id={{category.first}}>
+   <div class = "post-meta" align="right" id={{category.first}}>
+    {{category.first}}
+    <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+   </div>
+   <ul class="post-list">
    {% for post in category.last %}
     <li>
 	 <span class="post-meta">
