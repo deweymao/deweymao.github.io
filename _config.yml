@@ -23,6 +23,8 @@ github_username: deweymao
 # Build settings
 markdown: kramdown
 
+highlight: true
+
 theme: minima
 
 encoding: utf-8

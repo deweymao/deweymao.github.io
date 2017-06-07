@@ -6,46 +6,33 @@ author: Dewey Mao
 categories: C/C++
 ---
 
-```
+{% highlight c++ linenos %}
 //singleton.h
 class CSingleton{
 public:
 	static CSingleton& GetInstance();
 	~CSingleton();
-
-private:
-	CSingleton();
-	struct Impl;
+private:    
+	CSingleton();    
+	struct Impl;    
 	std::unique_ptr<Impl> impl;
-
 }
+{% endhighlight %}
 
-```
+{% highlight c++ linenos %}
+//singleton.cpp       
+struct CSingleton::Impl{    
+	int mem1;     
+	Impl(){	mem1 = 0; };   
+	~Impl(){}      
+};   
 
-```
-//singleton.cpp
-struct CSingleton::Impl{
-	int mem1;
-	//...
+CSingleton::CSingleton(): impl(new Impl()){}   
 
-	Impl(){
-		mem1 = 0;
-		//...
-	};
-	~Impl(){}
-};
+CSingleton::~CSingleton(){}   
 
-CSingleton::CSingleton(): impl(new Impl()){}
-
-CSingleton::~CSingleton(){}
-
-CSingleton& CSingleton::GetInstance(){
-	static CSingleton st;
-	return st;
+CSingleton& CSingleton::GetInstance(){   
+	static CSingleton st;   
+	return st;   
 }
-```
-
-
-
-
-
+{% endhighlight %}
