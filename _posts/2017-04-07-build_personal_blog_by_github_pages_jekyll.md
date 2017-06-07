@@ -65,7 +65,26 @@ git commit -m "comment"
 git push -u origin master
 {% endhighlight %}
 
-## 6 Source Of My Website
+## 6 Highlight Code
+### 6.1 Select a highlight.css
+- You can get highlight.css from <a href="https://github.com/jwarby/jekyll-pygments-themes" target="_blank">here</a>   
+- Put it to the path: /assets/highlight.css   
+- Add link in your post.html(or other code that need it)
+{% highlight html linenos %}
+<link rel="stylesheet" href="/assets/highlight.css">
+{% endhighlight %}
+### 6.2 Add the following code in your _config.yml
+{% highlight jekyll linenos %}
+highlight: true
+{% endhighlight %}
+### 6.3 How to use 
+{% raw %}
+{% highlight c++ linenos %}   
+	your code   
+{% endhighlight %}   
+{% endraw %}
+
+## 7 Source Of My Website
 You can find the source code for this website at
 {% include icon-github.html username="deweymao" %} /
 [deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
