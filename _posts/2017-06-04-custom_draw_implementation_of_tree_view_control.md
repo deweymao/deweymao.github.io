@@ -11,12 +11,12 @@ Your application can harness custom draw notification to easily change the font 
 The following is an example for tree-view control.
 
 ## Example
-```
+{% highlight c++ linenos %}
 // .h
 afx_msg void OnNMCustomdraw(NMHDR* pNMHDR, LRESULT* pResult);
-```
+{% endhighlight %}
 
-```
+{% highlight c++ linenos %}
 // .cpp
 ON_NOTIFY_REFLECT(NM_CUSTOMDRAW, &OnNMCustomdraw)
 
@@ -45,7 +45,7 @@ void OnNMCustomdraw(NMHDR* pNMHDR, LRESULT* pResult){
 		break;
 	}
 }
-```
+{% endhighlight %}
 
 ## reference
 - <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff919569(v=vs.85).aspx" target="_blank">About Custom Draw</a>   

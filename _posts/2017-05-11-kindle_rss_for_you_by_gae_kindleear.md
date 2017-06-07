@@ -14,12 +14,13 @@ KindleEar is an open source program of Python, which is hosted on Github. Kindle
 2. <a href="https://myaccount.google.com/security#connectedapps" target="_blank"> Google Sign in & security</a>: Allow less secure apps ON
 3. <a href="https://console.developers.google.com/cloud-resource-manager?hl=zh-cn&pli=1" target="_blank"> Create a Google Cloud Project</a>: [http://AppID.appspot.com] To visit your KindleEar
 4. <a href="https://console.cloud.google.com/home/dashboard" target="_blank"> Google Cloud Platform Shell to upload code</a>
-```
+
+{% highlight bash linenos %}
 rm -f uploader.sh* && \
 wget https://raw.githubusercontent.com/kindlefere/KindleEar-Uploader/master/uploader.sh && \
 chmod +x uploader.sh && \
 ./uploader.sh
-```
+{% endhighlight %}
 
 ## Tips
 1. Add your Gmail to your Amazon kindle approved senders mailing list
