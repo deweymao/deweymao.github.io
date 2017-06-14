@@ -47,7 +47,7 @@ void OnNMCustomdraw(NMHDR* pNMHDR, LRESULT* pResult){
 }
 {% endhighlight %}
 
-## reference
+## Reference
 - <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff919569(v=vs.85).aspx" target="_blank">About Custom Draw</a>   
 - <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff919573(v=vs.85).aspx" target="_blank">Using Custom Draw</a>
 
