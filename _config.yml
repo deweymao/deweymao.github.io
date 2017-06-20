@@ -31,6 +31,8 @@ encoding: utf-8
 
 timezone: Asia/Shanghai
 
+baidu_analytics: d8c60e764c1075853db59eb7f25d9846
+
 # provider: uyan
 # provider: disqus
 comments:
