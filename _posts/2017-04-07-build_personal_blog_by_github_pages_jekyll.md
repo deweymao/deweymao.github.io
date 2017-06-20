@@ -106,9 +106,13 @@ var _hmt = _hmt || [];
 </script>
 {% endhighlight %}
 
-- Add the following code in your include/header.html
+- Add the following code in your include/head.html
 {% highlight jekyll linenos %}
-{% raw %}{% include baidu_analytics.html %}{% endraw %}
+{% raw %}
+{% if site.baidu_analytics %}
+{% include baidu_analytics.html %}
+{% endif %}
+{% endraw %}
 {% endhighlight %}
 
 ## 8 Source Of My Website
