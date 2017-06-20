@@ -78,13 +78,40 @@ git push -u origin master
 highlight: true
 {% endhighlight %}
 ### 6.3 How to use 
+{% highlight c++ linenos %}
 {% raw %}
 {% highlight c++ linenos %}   
 	your code   
 {% endhighlight %}   
 {% endraw %}
+{% endhighlight %}
 
-## 7 Source Of My Website
+## 7 Use Baidu analytics
+- Register an account of <a href="" target="_blank">Baidu analytics</a>
+- Add the following code in your _config.yml
+{% highlight jekyll linenos %}
+baidu_analytics: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+{% endhighlight %}
+
+- Create a file named baidu_analytics.html
+{% highlight html linenos %}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?{% raw %}{{ site.baidu_analytics }}{% endraw %}";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{% endhighlight %}
+
+- Add the following code in your include/header.html
+{% highlight jekyll linenos %}
+{% raw %}{% include baidu_analytics.html %}{% endraw %}
+{% endhighlight %}
+
+## 8 Source Of My Website
 You can find the source code for this website at
 {% include icon-github.html username="deweymao" %} /
 [deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
