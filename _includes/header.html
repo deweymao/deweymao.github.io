@@ -2,8 +2,11 @@
   {% include baidu_analytics.html %}
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ "/" | relative_url}}"> <img src="{{ site.url }}/assets/pics/deweymao.jpg" alt="Dewey Mao"/> {{ site.title | escape }}</a>
+    
+	<p class="site-title">
+	<a href="{{ "/" | relative_url}}"> <img src="{{ site.url }}/assets/pics/deweymao.jpg" alt="Dewey Mao"/> {{ site.title | escape }}</a>
+    <sup><a href="{{"/feed.xml" | relative_url }}"> <img src="{{ site.url }}/assets/pics/rss.png" alt="rss"/></a></sup>
+	</p>
 
     <nav class="site-nav">
 	 <label for="nav-trigger">

@@ -21,9 +21,9 @@ layout: default
     {{ content }}
   </div>
 
-  <p align="right">	<a href="{{site.url}}/about/"> <b>Support me</b></a></p>
-
-  <p align="center"><b>
+<div>
+ <p align="center">
+  <b>
    {% if page.previous and page.next %}
     <a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
 	<a href="{{ site.url }}{{ page.next.url }}"> Next→ </a> 
@@ -37,7 +37,12 @@ layout: default
     <font color="gray">←Previous</font> &nbsp | &nbsp
     <font color="gray">Next→</font>
    {% endif %}
-  </b></p>
+   &nbsp | &nbsp 
+  </b>
+  <a href="{{site.url}}/about/"> <img src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/> </a> 
+ </p>
+</div>
+
 
 {% if site.comments.provider and page.comments != false %}
  {% case site.comments.provider %}
