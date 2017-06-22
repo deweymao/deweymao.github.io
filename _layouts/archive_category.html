@@ -4,13 +4,15 @@ layout: default
 <div class="archive">
 
   <header class="archive-header">
-    <h1 class="page-title">{{ page.title | escape }}</h1>
+    <h1 class="page-title">{{ page.title | escape }}
+	<a href="/archive"> <img style="border:none;" src="{{ site.url }}/assets/pics/sort_by_date.png" alt="Sort by Date"/> </a>
+	</h1>
+
 	<div class = "post-meta">
 	 Categories:
 	 {% for category in site.categories %}
 	  &nbsp <a href="#{{category.first}}">{{category.first }}({{ category | last | size }})</a>
 	 {% endfor %}
-	 <p align="right"><a href="/archive"> Sort by Date </a></p>
 	</div>
 	
   </header>

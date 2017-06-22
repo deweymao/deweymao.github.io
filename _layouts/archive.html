@@ -4,7 +4,9 @@ layout: default
 <div class="archive">
 
   <header class="archive-header">
-    <h1 class="page-title">{{ page.title | escape }}</h1>
+    <h1 class="page-title">{{ page.title | escape }}
+	<a href="/archive_category"> <img style="border:none;" src="{{ site.url }}/assets/pics/sort_by_category.png" alt="Sort by Category"/> </a>
+	</h1>
 	<div class = "post-meta">
 	 Dates:
 	 <script type="text/javascript">	var count = 0; </script>
@@ -23,7 +25,6 @@ layout: default
      {% if year %}
 	  &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
 	 {% endif %}
-	 <p align="right"><a href="/archive_category"> Sort by Category </a></p>
 	</div>
   </header>
    
