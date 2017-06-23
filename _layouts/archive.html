@@ -10,23 +10,25 @@ layout: default
 	</div>
 	<h1 class="post-title">{{ page.title | escape }}</h1>	
 
-	<div class = "post-meta">
+    <div class = "post-meta">
 	 Dates:
 	 <script type="text/javascript">	var count = 0; </script>
 	 {% for post in site.posts %}
 	 {% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
-	  {% if year != y %}
-	   {% if year %}
-	    &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+	 {% capture m  %}{{post.date | date:"%b"}}{% endcapture %} 
+	  {% if year != y or month != m %}
+	   {% if year and month %}
+	    &nbsp <a href="#{{month}}-{{year}}">{{month}}-{{year}} <script type="text/javascript"> document.write("("+count+")"); </script></a>
 	   {% endif %}
 	   {% assign year = y %}
+	   {% assign month = m %}
 	   <script type="text/javascript"> count = 1; </script>
 	  {% else %}
 	   <script type="text/javascript"> count++; </script>
 	  {% endif %}
 	 {% endfor %}
-     {% if year %}
-	  &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
+     {% if year and month %}
+	  &nbsp <a href="#{{month}}-{{year}}">{{month}}-{{year}} <script type="text/javascript"> document.write("("+count+")"); </script></a>
 	 {% endif %}
 	</div>
 
@@ -35,15 +37,18 @@ layout: default
   {{ content }}
   
    {% assign year = 0 %}
+   {% assign month = "" %}
    {% for post in site.posts %}
     {% capture y  %}{{post.date | date:"%Y"}}{% endcapture %}
-	{% if year != y %}
-	 {% if year != 0 %}
+	{% capture m  %}{{post.date | date:"%b"}}{% endcapture %} 
+	{% if year != y or month != m %}
+	 {% if year != 0 and month != "" %}
 	  </ul>
 	 {% endif %}
 	 {% assign year = y %}
-	 <div class = "post-meta" align="right" id={{ y }}>
-      {{ y }}
+	 {% assign month = m %}
+	 <div class = "post-meta" align="right" id={{month}}-{{year}}>
+      {{month}}-{{year}}
       <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
      </div>
      <ul class="post-list">
