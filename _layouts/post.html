@@ -21,27 +21,27 @@ layout: default
     {{ content }}
   </div>
 
-<div>
+  <div style="float:right">
+   <a href="{{site.url}}/about/"> <img style="border:none;" src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/> </a> 
+  </div>
+
  <p align="center">
   <b>
    {% if page.previous and page.next %}
-    <a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
+	<a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
 	<a href="{{ site.url }}{{ page.next.url }}"> Next→ </a> 
    {% elsif page.previous and page.next == nil %}
-    <a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
+	<a href="{{ site.url }}{{ page.previous.url }}"> ←Previous </a> &nbsp | &nbsp
 	<font color="gray">Next→</font>
    {% elsif page.previous == nil and page.next %}
-    <font color="gray">←Previous</font> &nbsp | &nbsp
+	<font color="gray">←Previous</font> &nbsp | &nbsp
 	<a href="{{ site.url }}{{ page.next.url }}"> Next→ </a> 
    {% else %}
-    <font color="gray">←Previous</font> &nbsp | &nbsp
-    <font color="gray">Next→</font>
+	<font color="gray">←Previous</font> &nbsp | &nbsp
+	<font color="gray">Next→</font>
    {% endif %}
-   &nbsp | &nbsp 
   </b>
-  <a href="{{site.url}}/about/"> <img style="border:none;" src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/> </a> 
  </p>
-</div>
 
 
 {% if site.comments.provider and page.comments != false %}
