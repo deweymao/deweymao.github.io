@@ -4,9 +4,12 @@ layout: default
 <div class="archive">
 
   <header class="archive-header">
-    <h1 class="page-title">{{ page.title | escape }}
+ 
+	<div style="float:right">
 	<a href="/archive_category"> <img style="border:none;" src="{{ site.url }}/assets/pics/sort_by_category.png" alt="Sort by Category"/> </a>
-	</h1>
+	</div>
+	<h1 class="page-title">{{ page.title | escape }}</h1>	
+
 	<div class = "post-meta">
 	 Dates:
 	 <script type="text/javascript">	var count = 0; </script>
@@ -26,6 +29,7 @@ layout: default
 	  &nbsp <a href="#{{year}}">{{ year }} <script type="text/javascript"> document.write("("+count+")"); </script></a>
 	 {% endif %}
 	</div>
+
   </header>
    
   {{ content }}
