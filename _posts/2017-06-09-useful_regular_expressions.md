@@ -10,4 +10,5 @@ I will collect some real useful regular expressions in this blog.
 
 {% highlight batch linenos %}
 To find Chinese string in code: (".*[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.*")
+To count lines of code in Microsoft Visual Studio: b*[^:b#/]+.*$
 {% endhighlight %}
