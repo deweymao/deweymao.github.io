@@ -24,7 +24,8 @@ namespace CommonUtils {
 {% highlight c++ linenos %}
 //Trace.cpp
 #include "stdafx.h"
-#include <Windows.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "trace.h"
 
 void CommonUtils::Trace(const char* format, ...) {
