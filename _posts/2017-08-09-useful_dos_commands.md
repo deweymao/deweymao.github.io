@@ -11,4 +11,6 @@ List of useful dos commands:
 Clean up the disk: cleanmgr /sageset:99, cleanmgr /sagerun:99
 Repair the disk: chkdsk /f/r C:
 Remote desktop connection: mstsc
+Open the notepad: notepad
+Open the registry editor: regedit/regedt32
 {% endhighlight %}
