@@ -18,6 +18,7 @@ namespace CommonUtils {
 	void Trace(const wchar_t* format, ...);
 	void ThreadTrace(const char* format, ...);
 	void ThreadTrace(const wchar_t* format, ...);
+	void TraceBytes(const unsigned char* buffer, unsigned long length, const char* prefix_format = nullptr, ...);
 }
 {% endhighlight %}
 
@@ -62,6 +63,33 @@ void CommonUtils::ThreadTrace(const wchar_t* format, ...) {
 	_vsnwprintf_s(msg, _countof(msg), _TRUNCATE, format, args);
 	va_end(args);
 	CommonUtils::Trace(L"[%.4d] %s", GetCurrentThreadId(), msg);
+}
+
+void CommonUtils::TraceBytes(const unsigned char* buffer, unsigned long length, const char* prefix_format /*= nullptr*/, ...) {
+	char prefix[512];
+	if (prefix_format != nullptr) {
+		va_list args;
+		va_start(args, prefix_format);
+		vsnprintf_s(prefix, _countof(prefix), _TRUNCATE, prefix_format, args);
+		va_end(args);
+	}
+
+	const int cols = 32;
+	char hex[cols * 3 + 1];
+	char* cur = hex;
+	for (unsigned long i = 0; i < length; i++) {
+		sprintf_s(cur, 4, "%.2X ", buffer[i]);
+		if ((((i + 1) % cols) == 0) || ((i + 1) == length)) {
+			if (prefix_format != nullptr) {
+				Trace("%s %s\n", prefix, hex);
+			} else {
+				Trace("%s\n", hex);
+			}
+			cur = hex;
+		} else {
+			cur += 3;
+		}
+	}
 }
 
 {% endhighlight %}
