@@ -13,4 +13,8 @@ Repair the disk: chkdsk /f/r C:
 Remote desktop connection: mstsc
 Open the notepad: notepad
 Open the registry editor: regedit/regedt32
+Open control panel: control
+Open service window: services.msc
+Open calculator: calc
+Enable the hidden administrator account(open a command prompt in administrator mode): net user administrator /active:yes
 {% endhighlight %}
