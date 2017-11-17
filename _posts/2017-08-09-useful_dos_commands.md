@@ -18,4 +18,5 @@ Open service window: services.msc
 Open calculator: calc
 Enable the hidden administrator account(open a command prompt in administrator mode): net user administrator /active:yes
 Open task manager: taskmgr
+Open computer management: compmgmt.msc
 {% endhighlight %}
