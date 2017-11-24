@@ -18,3 +18,4 @@ DotNetCore.2.0.3-WindowsHosting.exe
 
 ### 3 Create a Web site
 AssetService: modify config.json
+Error 405: module -> delete WebDAV
