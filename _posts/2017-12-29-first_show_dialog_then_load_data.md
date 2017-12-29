@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "First show dialog, then load data" 
+title: "First show dialog Then load data" 
 date: 2017-12-28 13:26:31 
 author: Dewey Mao 
 categories: C/C++ 
