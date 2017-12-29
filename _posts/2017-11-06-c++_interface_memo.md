@@ -27,3 +27,11 @@ for example:
 {% highlight c++ linenos %}
 int nValue = GetPrivateProfileInt("AppName","SectionName",nDefaultValue,filePath);
 {% endhighlight %}
+
+### API-4 <a href="https://docs.microsoft.com/en-us/cpp/mfc/reference/ccombobox-class#setitemdata" target="_blank">CComboBox::GetItemData/SetItemData</a>
+Sets the 32-bit value associated with the specified item in a combo box.(also in a CListCtrl, Grid...)
+{% highlight c++ linenos %}
+int index=combobox.AddString("DisplayField");
+combobox.SetItemData(index,databaseIndex);
+int databaseIndex=combobox.GetItemData(index);
+{% endhighlight%}
