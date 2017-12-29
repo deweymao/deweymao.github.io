@@ -35,3 +35,16 @@ int index=combobox.AddString("DisplayField");
 combobox.SetItemData(index,databaseIndex);
 int databaseIndex=combobox.GetItemData(index);
 {% endhighlight%}
+
+### API-5 <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb759844(v=vs.85).aspx" target="_blank">Shell Lightweight Utility Functions</a>
+This section describes the Windows Shell lightweight utility functions. The programming elements explained in this documentation are exported by Shlwapi.dll and defined in Shlwapi.h and Shlwapi.lib.
+- String Functions
+- Path Functions
+- Registry Functions
+- Color Palette Functions
+- Miscellaneous
+{% highlight c++ linenos %}
+wchar_t path[_MAX_PATH];
+GetModuleFileNameW(NULL, path, _MAX_PATH);
+PathRenameExtensionW(path, L".ini");
+{% endhighlight%}
