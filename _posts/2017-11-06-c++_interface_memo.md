@@ -58,3 +58,11 @@ if(val.vt != VT_EMPTY){
 	delete[] cs;
 }
 {% endhighlight %}
+
+### API-7 <a href="https://docs.microsoft.com/en-us/cpp/standard-library/algorithm-functions#unique" target="_blank"> std::unique </a>
+Removes duplicate elements that are adjacent to each other in a specified range.
+{% highlight c++ lineos %}
+std::vector v;
+std::sort(v.begin(), v.end());
+v.erase(std::unique(v.begin(), v.end()), v.end());
+{% endhighlight %}
