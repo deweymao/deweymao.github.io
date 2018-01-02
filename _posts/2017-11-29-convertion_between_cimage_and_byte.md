@@ -1,7 +1,7 @@
 --- 
 layout: post 
 title: "Convertion between CImage and BYTE" 
-date: 2017-11-19 17:01:03 
+date: 2017-11-29 17:01:03 
 author: Dewey Mao 
 categories: C/C++ 
 --- 
