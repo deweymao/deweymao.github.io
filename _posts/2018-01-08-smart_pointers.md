@@ -238,6 +238,3 @@ When cyclic references are unavoidable, or even preferable for some reason, use 
 - <a href="https://docs.microsoft.com/en-us/cpp/cpp/how-to-create-and-use-unique-ptr-instances" target="_blank"> How to: Create and Use unique_ptr Instances </a>   
 - <a href="https://docs.microsoft.com/en-us/cpp/cpp/how-to-create-and-use-shared-ptr-instances" target="_blank"> How to: Create and Use shared_ptr Instances </a>   
 - <a href="https://docs.microsoft.com/en-us/cpp/cpp/how-to-create-and-use-weak-ptr-instances" target="_blank"> How to: Create and Use weak_ptr Instances </a>   
-{% highlight c++ lineos %}
-
-{% endhighlight %}
