@@ -1,7 +1,7 @@
 --- 
 layout: post 
 title: "Use NMAKE to build code on the command line" 
-date: 2018-01-10 10:48:49 
+date: 2018-01-10 16:48:49 
 author: Dewey Mao 
 categories: C/C++ 
 --- 
