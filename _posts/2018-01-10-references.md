@@ -26,10 +26,51 @@ For example, any object whose address can be converted to type char * can also b
 When the &identifier is preceded by a type, such as int or char, identifier is declared as a reference to the type. 
 When &identifier is not preceded by a type, the usage is that of the address-of operator.
 
-### Rvalue Reference Declarator &&
+{% highlight c++ lineos %}
+#include <iostream>  
+using namespace std;  
+
+struct Person  
+{  
+    char* Name;  
+    short Age;  
+};  
+
+int main()  
+{  
+   // Declare a Person object.  
+   Person myFriend;  
+
+   // Declare a reference to the Person object.  
+   Person& rFriend = myFriend;  
+
+   // Set the fields of the Person object.  
+   // Updating either variable changes the same object.  
+   myFriend.Name = "Bill";  
+   rFriend.Age = 40;  
+
+   // Print the fields of the Person object to the console.  
+   cout << rFriend.Name << " is " << myFriend.Age << endl;  
+   //output: Bill is 40
+}
+{% endhighlight %}
+
+### <a href="https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp" target="_blank"> Rvalue Reference Declarator && </a>
+Holds a reference to an rvalue expression.
 
 
+### <a href="https://docs.microsoft.com/en-us/cpp/cpp/reference-type-function-returns" target="_blank"> Reference-Type Function Returns </a>
+Functions can be declared to return a reference type. There are two reasons to make such a declaration:
+- The information being returned is a large enough object that returning a reference is more efficient than returning a copy.
+- The type of the function must be an l-value.
+- The referred-to object will not go out of scope when the function returns.
 
 ### Reference
 - <a href="https://docs.microsoft.com/en-us/cpp/cpp/references-cpp" target="_blank">reference(C++)</a>
 - <a href="https://docs.microsoft.com/en-us/cpp/cpp/lvalue-reference-declarator-amp" target="_blank">Lvalue Reference Declarator &</a>
+- <a href="https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp" target="_blank"> Rvalue Reference Declarator && </a>
+- <a href="https://docs.microsoft.com/en-us/cpp/cpp/reference-type-function-returns" target="_blank"> Reference-Type Function Returns </a>
+
+{% highlight c++ lineos %}
+
+{% endhighlight %}
