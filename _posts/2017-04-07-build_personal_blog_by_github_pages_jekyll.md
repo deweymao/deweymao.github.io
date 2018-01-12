@@ -116,8 +116,8 @@ var _hmt = _hmt || [];
 {% endhighlight %}
 
 ## 8 Source Of My Website
-You can find the source code for this website at
+- You can find the source code for this website at
 {% include icon-github.html username="deweymao" %} /
-[deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
-
+[deweymao.github.io](https://github.com/deweymao/deweymao.github.io)   
+- <a href="https://github.com/getlantern/lantern" target="_blank"> Get Lantern </a> to access unlimited internet.
 

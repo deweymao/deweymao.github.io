@@ -30,6 +30,5 @@ chmod +x uploader.sh && \
 ## Try My Kindle RSS Serve
 - <a href="https://deweymao-kindleear.appspot.com/" target="_blank"> Try My Kindle RSS Serve</a> test account: test，password: 123456
 - <a href="https://kindlefere.com/post/19.html" target="_blank">Reference</a>
-
-
+- <a href="https://github.com/getlantern/lantern" target="_blank"> Get Lantern </a> to access unlimited internet.
 
