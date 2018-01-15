@@ -21,6 +21,7 @@ Open task manager: taskmgr
 Open computer management: compmgmt.msc
 Displays a list of directory's files and subdirectories: dir
 Displays the name of or changes the current directory: cd, for example: cd .. :return to the parent directory
+Microsoft system configuration: msconfig, for example: you can find boot item
 {% endhighlight %}
 
 ### Reference
