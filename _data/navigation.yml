@@ -8,5 +8,7 @@ main:
     url: /archive/
   - title: "Collection"
     url: /collection/
+  - title: "Gallery"
+    url: /gallery/
   #- title: "GitHub"
   #  url: https://github.com/yous/whiteglass
