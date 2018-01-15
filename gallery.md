@@ -9,12 +9,20 @@ permalink: /gallery/
 <div>
  <table border = "1">
   <tr>
-   <td align="center"> <p>orchid</p><img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/></td>
+    <td align="center"> <b>orchid</b> </td>
+  </tr>
+  <tr>
+   <td align="center"> <img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/> </td>
   </tr>
 
-  <tr>
-   <td align="center"> <p>orchid</p><img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/></td>
+   <tr>
+    <td align="center"> <b>orchid</b> </td>
   </tr>
+  <tr>
+   <td align="center"> <img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/> </td>
+  </tr>
+
+ 
 
  </table>
 </div>
