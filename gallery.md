@@ -22,7 +22,6 @@ permalink: /gallery/
    <td align="center"> <img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/> </td>
   </tr>
 
- 
 
  </table>
 </div>
