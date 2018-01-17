@@ -18,7 +18,7 @@ echo ### Welcome to Miss Jia's Online Gallery. >> !f!
 echo. >> !f!
 
 echo ^<div^> >> !f!
-echo  ^<table border = "1"^> >> !f!
+echo  ^<table align="center" border = "1"^> >> !f!
 echo. >> !f!
 
 for %%s in (*.jpg) do ( 
@@ -27,6 +27,7 @@ for %%s in (*.jpg) do (
   set month=!d:~5,2!
   set day=!d:~8,2!
   set title=!d:~11,-4!
+  set title=!title:_= !
  
   echo  ^<tr^> >> !f!
   echo   ^<td align="center"^> ^<b^>!title!^</b^> ^<br^> ^<span class="post-meta"^> !month!-!day!-!year!, !author! ^</span^> ^</td^> >> !f!
@@ -43,4 +44,5 @@ echo ^</div^> >> !f!
 
 rem echo. >> !f! : blank line
 rem echo ^<div^> : ^ escaped character
-rem  set year=!d:~0,4! : extract 4 characters from the first character
+rem set year=!d:~0,4! : extract 4 characters from the first character
+rem set title=!title:_= ! : replace '_' with ' ' 

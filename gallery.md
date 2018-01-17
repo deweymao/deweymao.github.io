@@ -10,13 +10,13 @@ permalink: /gallery/
 ### Welcome to Miss Jia's Online Gallery. 
  
 <div> 
- <table border = "1"> 
+ <table align="center" border = "1"> 
  
  <tr> 
-  <td align="center"> <b>orchid</b> <br> <span class="post-meta"> 01-15-2018, Jia </span> </td> 
+  <td align="center"> <b>orchid</b> <br> <span class="post-meta"> 01-17-2018, Jia </span> </td> 
  </tr> 
  <tr> 
-  <td align="center"> <img src="{{ site.url }}/assets/gallery/2018_01_15_orchid.jpg" alt="orchid"/> </td> 
+  <td align="center"> <img src="{{ site.url }}/assets/gallery/2018_01_17_orchid.jpg" alt="orchid"/> </td> 
  </tr> 
  
  
