@@ -53,11 +53,17 @@ PathRenameExtensionW(path, L".ini");
 {% highlight c++ lineos %}
 _variant_t val;
 if(val.vt != VT_EMPTY){
+	try{
 	val.ChargeType(VT_BSTR);
+	}catch(_com_error e){};
 	char* cs = _com_util::ConvertBSTRToString(val.bstrVal);
 	delete[] cs;
 }
 {% endhighlight %}
+TRY can improve stability of the program, for example:
+- double(1.23) -> string(1.23) yes
+- string(1.23) -> double(1.23) yes
+- string(abcd) -> double(????) error 
 
 ### API-7 <a href="https://docs.microsoft.com/en-us/cpp/standard-library/algorithm-functions#unique" target="_blank"> std::unique </a>
 Removes duplicate elements that are adjacent to each other in a specified range.
