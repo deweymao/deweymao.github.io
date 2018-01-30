@@ -66,3 +66,43 @@ std::vector v;
 std::sort(v.begin(), v.end());
 v.erase(std::unique(v.begin(), v.end()), v.end());
 {% endhighlight %}
+
+### API-8 struct
+Use struct only when there is data, and all others use class.
+
+### API-9 explicit constructors
+use explicit for single argument constructors
+{% highlight c++ lineos %}
+class Demo{
+	explicit Demo(int n);
+	...
+}
+Demo d(1);
+Demo d1 = 1;//error: Implicit conversion is not allowed
+{% endhighlight %}
+
+### API-10 copy constructors
+Use copy constructors only when you need to copy a object.
+{% highlight c++ lineos %}
+#define DISALLOW_COPY_AND_ASSIGN(TypeName)\
+TypeName(const TypeName&);\
+void operator = (const TypeName&)
+
+class Demo{
+	...
+private:
+	DISALLOW_COPY_AND_ASSIGN(Demo);//defined in private
+}
+{% endhighlight %}
+
+### API-11 TODO comments
+Use TODO to comment the code that is NOT perfect, Temporary and to be done in the future.
+
+### API-12 Multiple inclusion
+#define: C++ standard support
+#pragma once: Compiler support
+{% highlight c++ lineos %}
+#ifndef PROJECT_FILE_H_
+#define PROJECT_FILE_H_
+#endif
+{% endhighlight %}
