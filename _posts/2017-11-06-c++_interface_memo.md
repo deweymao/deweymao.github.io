@@ -110,5 +110,6 @@ Use TODO to comment the code that is NOT perfect, Temporary and to be done in th
 {% highlight c++ lineos %}
 #ifndef PROJECT_FILE_H_
 #define PROJECT_FILE_H_
-#endif
+...
+#endif //PROJECT_FILE_H_
 {% endhighlight %}
