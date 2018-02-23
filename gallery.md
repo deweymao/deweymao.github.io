@@ -4,9 +4,12 @@ title: Gallery
 permalink: /gallery/ 
 --- 
  
-<div style="float:right"> 
+<!--
+ <div style="float:right"> 
  <a href="{{site.url}}/about/"> <img style="border:none;" src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/> </a>  
-</div> 
+</div>
+-->
+
 ### Welcome to Miss Jia's Online Gallery. 
  
 <div> 

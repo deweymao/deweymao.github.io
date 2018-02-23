@@ -16,6 +16,7 @@ You can find the source code for this website at
 {% include icon-github.html username="deweymao" %} /
 [deweymao.github.io](https://github.com/deweymao/deweymao.github.io)
 
+<!--
 ### <img src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/> Thanks for Your Reward!
 If this site is helpful to you, and you are willing to support me to do better, please let your money become more valuable. thank you!
 
@@ -34,3 +35,4 @@ If this site is helpful to you, and you are willing to support me to do better, 
  </tr>
 </table>
 </div>
+-->
