@@ -11,9 +11,9 @@ echo permalink: /gallery/ >> !f!
 echo --- >> !f!
 echo. >> !f!
 
-echo ^<div style="float:right"^> >> !f!
-echo  ^<a href="{{site.url}}/about/"^> ^<img style="border:none;" src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/^> ^</a^>  >> !f!
-echo ^</div^> >> !f!
+rem echo ^<div style="float:right"^> >> !f!
+rem echo  ^<a href="{{site.url}}/about/"^> ^<img style="border:none;" src="{{ site.url }}/assets/pics/reward.png" alt="Reward me"/^> ^</a^>  >> !f!
+rem echo ^</div^> >> !f!
 echo ### Welcome to Miss Jia's Online Gallery. >> !f!
 echo. >> !f!
 
@@ -33,7 +33,7 @@ for %%s in (*.jpg) do (
   echo   ^<td align="center"^> ^<b^>!title!^</b^> ^<br^> ^<span class="post-meta"^> !month!-!day!-!year!, !author! ^</span^> ^</td^> >> !f!
   echo  ^</tr^> >> !f!
   echo  ^<tr^> >> !f!
-  echo   ^<td align="center"^> ^<img src="{{ site.url }}/assets/gallery/%%s" alt="!title!"/^> ^</td^> >> !f!
+  echo   ^<td align="center"^> ^<img src="{{ site.url }}/assets/gallery/%%s" alt="!title!" width="800px" /^> ^</td^> >> !f!
   echo  ^</tr^> >> !f!
   echo. >> !f!
 ) 
