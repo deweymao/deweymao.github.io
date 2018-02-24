@@ -3,7 +3,7 @@ layout: post
 title:  "Build Personal Blog: GitHub Pages + Jekyll"
 date:   2017-04-07 23:36:51
 author: Dewey Mao
-categories: Jekyll
+categories: Solution
 ---
 
 ## 1 Install Development Tools

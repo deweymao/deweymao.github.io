@@ -1,9 +1,9 @@
 --- 
 layout: post 
-title: "Windows Commands" 
+title: "Memo Windows Commands" 
 date: 2017-08-09 16:40:35 
 author: Dewey Mao 
-categories: Batch 
+categories: Memo 
 --- 
 List of useful Windows commands:
 

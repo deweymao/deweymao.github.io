@@ -1,9 +1,9 @@
 --- 
 layout: post 
-title: "C++ interface memo" 
+title: "Memo C++ Interfaces" 
 date: 2017-11-06 16:02:18 
 author: Dewey Mao 
-categories: C/C++ 
+categories: Memo 
 --- 
 In my development process, Although I have an impression on some C++ APIs, I can't write them correctly and quickly. So I write this memo for my poor memory.
 

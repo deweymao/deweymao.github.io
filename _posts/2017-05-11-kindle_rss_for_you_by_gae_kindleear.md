@@ -3,7 +3,7 @@ layout: post
 title:  "Kindle RSS for You: GAE + KindleEar"
 date:   2017-05-11 06:00:00
 author: Dewey Mao
-categories: Kindle
+categories: Solution
 ---
 
 ## What is <a href="https://github.com/cdhigh/kindleear" target="_blank">KindleEar</a>?
