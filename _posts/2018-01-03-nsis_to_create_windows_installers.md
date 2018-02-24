@@ -1,9 +1,9 @@
 --- 
 layout: post 
-title: "NSIS to create Windows installers" 
+title: "NSIS to Create Windows Installers" 
 date: 2018-01-03 16:04:37 
 author: Dewey Mao 
-categories: NSIS 
+categories: Tool 
 --- 
 
 ### <a href="http://nsis.sourceforge.net/Main_Page" target="_blank"> About NSIS </a>
