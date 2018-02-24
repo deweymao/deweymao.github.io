@@ -1,7 +1,7 @@
 --- 
 layout: post 
 title: "BCGControlBar for MFC" 
-date: 2018-02-23 16:32:49 
+date: 2018-02-24 16:32:49 
 author: Dewey Mao 
 categories: Tool 
 --- 
