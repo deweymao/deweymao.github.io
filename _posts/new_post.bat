@@ -24,5 +24,16 @@ echo author: !post_author! >> !file_name!
 echo categories: !post_category! >> !file_name!
 echo --- >> !file_name!
 
+echo. >> !file_name!
+echo. >> !file_name!
+echo. >> !file_name!
+echo ### Reference >> !file_name!
+echo - ^<a href="" target="_blank"^>  ^</a^> >> !file_name!
+echo - ^<a href="" target="_blank"^>  ^</a^> >> !file_name!
+
 echo ----------SUCCESS----------
+
+!file_name!
+
 pause
+
