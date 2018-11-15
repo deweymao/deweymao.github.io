@@ -38,3 +38,8 @@ move data directory to E:\postgresql_data
 modify the registry of postgreSQL: -D "E:\postgresql_data" (HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\postgresql-9.5\ImagePath)
 restart postgreSQL service: services.msc
 {% endhighlight %}
+
+### 5 Backup and Restore database by pgAdmin tool
+- Create a new database
+- Add expand library: postgis and uuid-ossp
+- Restore from a SQL script file
