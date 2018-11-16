@@ -12,12 +12,10 @@ categories: Java
 - install myeclipse
 
 ### Set environmental variable
-{% highlight batch linenos %}
 JAVA_HOME:		D:\Program Files (x86)\Java\jdk1.6.0_38
 CLASSPATH:		.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
 Path£º			%JAVA_HOME%\bin
 CATALINA_HOME:		C:\apache-tomcat-6.0.36
-{% endhighlight %}
  
 ### Reference 
 - <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"> jdk download </a> 
