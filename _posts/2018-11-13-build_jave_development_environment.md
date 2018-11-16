@@ -3,7 +3,7 @@ layout: post
 title: "Build Jave Development Environment" 
 date: 2018-11-13 19:51:50 
 author: Dewey Mao 
-categories: Management 
+categories: Java 
 --- 
 ### Install Java developmental tools
 - install jdk
