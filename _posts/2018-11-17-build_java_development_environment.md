@@ -19,6 +19,11 @@ Path:%JAVA_HOME%\bin
 CATALINA_HOME:C:\apache-tomcat-6.0.36
 {% endhighlight %}
 
+### Configure MyEclipse
+- Set UTF-8 code: [Window->Preferences->General->Workspace->Text file encoding] other UTF-8
+- Add jdk: [Window->Preferences->Java->Installed JREs->Add->Standard VM] check the added item
+- Import project: [File->Import->General->Existing projects into workspace] or [File->Import->SVN->Checked out from SVN]
+
 ### Reference 
 - <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"> jdk download </a> 
 - <a href="http://tomcat.apache.org/" target="_blank"> apache tomcat </a> 
