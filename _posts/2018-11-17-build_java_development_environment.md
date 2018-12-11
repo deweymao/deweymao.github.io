@@ -13,10 +13,17 @@ categories: Java
  
 ### Set environmental variable
 {% highlight batch linenos %}
-JAVA_HOME:D:\Program Files (x86)\Java\jdk1.6.0_38
-CLASSPATH:.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+JAVA_HOME:D:\Java\jdk1.6.0_38
+JRE_HOME:D:\Java\jdk1.6.0_38\jre
 Path:%JAVA_HOME%\bin
-CATALINA_HOME:C:\apache-tomcat-6.0.36
+check:java -version
+{% endhighlight %}
+
+### Configure Tomcat
+- Keep D:\apache-tomcat-6.0.36\bin\setclasspath.bat "set JAVA_HOME=D:\Java\jdk1.6.0_38" same with JAVA_HOME.
+- Modify port: D:\apache-tomcat-6.0.36\conf\server.xml
+{% highlight batch linenos %}
+<Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" URIEncoding="UTF-8"/>
 {% endhighlight %}
 
 ### Configure MyEclipse
