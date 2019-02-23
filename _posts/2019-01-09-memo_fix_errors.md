@@ -20,6 +20,12 @@ For Windows Home Edition:
 new "\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSp\Parameters"  
 new AllowEncryptionOracle(DWORD 32) = 2  
 {% endhighlight %}
+
+#### Error-2 FTP clinet: An error occurred opening a folder on the FTP server. Check if you have permission to access the folder.
+Maybe need to modify "not using FTP passive mode": IE explorer -> Setting -> Internet option -> Advanced -> Unchecked "using passive FTP".   
+
+#### Error-3 FTP server: 451 No mapping for unicode character exists in the target multi-byte code page.
+IIS -> FTP setting -> Advanced setting -> Allow UTF-8 = false   
  
 ### Reference 
 - <a href="" target="_blank">  </a> 
