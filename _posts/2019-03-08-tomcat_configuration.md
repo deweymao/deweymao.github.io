@@ -9,10 +9,10 @@ categories: Tomcat
 The Apache Tomcat software is an open source implementation of the Jave Servlet, JavaServer Pages, Java Expression Language and Java WebSocket 
 technologies.
 
-#### Install Tomcat
-check bin/setclasspath.bat "set JAVA_HOME = " same with system environment variable JAVA_HOME.
+### Install Tomcat
+- check bin/setclasspath.bat "set JAVA_HOME = " same with system environment variable JAVA_HOME.
 
-#### Deploy Web Application
+### Deploy Web Application
 - modify conf/server.xml
 {% highlight batch linenos %}
 <Host name="localhost" appBase="webapps" 
@@ -22,7 +22,7 @@ check bin/setclasspath.bat "set JAVA_HOME = " same with system environment varia
 </Host>
 {% endhighlight %} 
 
-#### Deploy multiple Web applications in one Tomcat
+### Deploy multiple Web applications in one Tomcat
 - modify conf/server.xml
 {% highlight batch linenos %} 
 <Host name="localhost" appBase="webapps" 
@@ -41,7 +41,7 @@ check bin/setclasspath.bat "set JAVA_HOME = " same with system environment varia
     </context-param>
 {% endhighlight %} 
 
-#### Run multiple Tomcats in one machine
+### Run multiple Tomcats in one machine
 To modify all ports in server.xml of Tomcat 
  
 ### Reference 
