@@ -5,8 +5,7 @@ date: 2019-02-23 18:56:59
 author: Dewey Mao 
 categories: IIS 
 --- 
- Please read Reference
- 
+Please read Reference
  
 ### Reference 
 - <a href="https://social.technet.microsoft.com/wiki/contents/articles/12364.windows-server-2012-ftp-installation.aspx" target="_blank"> Windows Server 2012 FTP Installation </a> 
