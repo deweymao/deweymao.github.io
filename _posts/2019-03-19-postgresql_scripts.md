@@ -7,5 +7,4 @@ categories: PostgreSQL
 --- 
 
 
-### Reference 
-- <a href="https://www.postgresql.org/docs/manuals/" target="_blank"> PostgreSQL Documnetation </a> 
+### Reference
