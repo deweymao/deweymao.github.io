@@ -7,7 +7,7 @@ categories: PostgreSQL
 --- 
 {% highlight batch linenos %}
 
-/* create testdb */
+create testdb
 
 {% endhighlight %}
 
