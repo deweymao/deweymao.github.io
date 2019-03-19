@@ -5,8 +5,7 @@ date: 2019-03-19 12:49:40
 author: Dewey Mao 
 categories: PostgreSQL 
 --- 
-
-{% highlight batch linenos %}    
+   
 // create testdb    
 createdb -h localhost -p 5432 -U postgres testdb    
 
@@ -50,8 +49,7 @@ ALTER TABLE "RDB_MediumHole_SingleRowLine" ALTER COLUMN "RowNum" TYPE integer US
 DELETE FROM zhr;   
 
 // drop table zhr 
-DROP TABLE zhr;
-{% endhighlight %}    
+DROP TABLE zhr;   
 
 ### Reference
 - <a href="https://www.postgresql.org/docs/manuals/" target="_blank"> PostgreSQL Documnetation </a>
