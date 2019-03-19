@@ -7,14 +7,7 @@ categories: PostgreSQL
 --- 
 
 {% highlight bash linenos %}
-#check ruby installation
-ruby -v 
-#go to DevKit installation directory
-ruby dk.rb init
-#generate config.yml file, add the installation path of ruby at the end of line, for example: 
-- D:\Jekyll\Ruby22-x64
-#then
-ruby dk.rb install 
+createdb -h localhost -p 5432 -U postgres testdb
 {% endhighlight %}
 
 ### Reference
