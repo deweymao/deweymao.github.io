@@ -7,8 +7,6 @@ categories: PostgreSQL
 --- 
 
 {% highlight bash linenos %}
-
-
 {% endhighlight %}
 
 ### Reference
