@@ -7,12 +7,11 @@ categories: PostgreSQL
 --- 
 
 {% highlight bash linenos %}
-// create testdb    
-createdb -h localhost -p 5432 -U postgres testdb    
+// create testdb
+createdb -h localhost -p 5432 -U postgres testdb
 
-// drop testdb    
-dropdb -h localhost -p 5432 -U postgres testdb     
-
+// drop testdb
+dropdb -h localhost -p 5432 -U postgres testdb
 
 {% endhighlight %}
 
