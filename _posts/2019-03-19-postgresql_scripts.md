@@ -48,7 +48,7 @@ ALTER TABLE "RDB_MediumHole_SingleRowLine" ALTER COLUMN "RowNum" TYPE integer US
 // empty table zhr    
 DELETE FROM zhr;   
 
-// drop table zhr 
+// drop table zhr    
 DROP TABLE zhr;   
 
 ### Reference
