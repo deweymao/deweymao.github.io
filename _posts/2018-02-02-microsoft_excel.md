@@ -7,7 +7,7 @@ categories: Tool
 --- 
 
 ### Import Excel TypeLibs
-{% highlight c++ lineos %}
+{% highlight c++ linenos %}
 #import "MSO.DLL" rename("RGB", "MsoRGB") rename("DocumnetProperties", "MsoDocumnetProperties")
 #import "VBE6EXT.OLB"
 #import "EXCEL11.TLB" rename("RGB", "ExcelRGB") rename("DialogBox", "ExcelDialogBox") rename("ReplaceText", "ExcelReplaceText") rename("CopyFile", "ExcelCopyFile") no_auto_exclude
@@ -21,7 +21,7 @@ After Compiled, Output files:
 - vbe6ext.tli
 
 ### Example
-{% highlight c++ lineos %}
+{% highlight c++ linenos %}
 // testExcel.h
 #ifndef TESTTOOLS_TESTEXCEL_H_
 #define TESTTOOLS_TESTEXCEL_H_
