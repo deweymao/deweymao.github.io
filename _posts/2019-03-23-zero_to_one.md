@@ -1,9 +1,9 @@
 ﻿--- 
 layout: post 
-title: "Zero To One" 
+title: "《从0到1》" 
 date: 2019-03-23 16:16:04 
 author: Dewey Mao 
-categories: BOOK 
+categories: Book 
 --- 
 #### 在什么重要问题上你与其他人有不同看法？
 - 创新不是从“1到n”，而是从“0到1”。

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Build Personal Blog: GitHub Pages + Jekyll"
 date:   2017-04-07 23:36:51
@@ -49,7 +49,8 @@ bundle show minima
 Reference: <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 
 ## 4 Write Blogs by Markdown
-<a href="http://www.appinn.com/markdown/" target="_blank">Markdown Gammar</a>
+- <a href="http://www.appinn.com/markdown/" target="_blank">Markdown Gammar</a>
+- Using UTF-8 with BOM
 
 ## 5 Commit to GitHub Repository
 {% highlight bash linenos %}
