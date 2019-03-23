@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "¡¶´Ó0µ½1¡·" 
+title: "Zero To One" 
 date: 2019-03-23 16:16:04 
 author: Dewey Mao 
 categories: BOOK 
