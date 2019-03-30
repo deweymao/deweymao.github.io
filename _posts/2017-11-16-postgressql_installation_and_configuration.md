@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "PostgresSQL installation and configuration" 
 date: 2017-11-16 10:04:44 
@@ -23,8 +23,9 @@ log out PostgreSQL in a command prompt: \q
 {% highlight batch linenos %}
 # postgresql.conf
 listen_addresses = '*'			# what IP address(es) to listen on; comma-separated list of addresses; efaults to 'localhost'; use '*' for all (change requires restart)
-port = 5432				# (change requires restart)
+port = 5432						# (change requires restart)
 max_connections = 100			# (change requires restart)
+lc_messages = 'UTF8'			# locale for system error message
 # pg_hba.conf
 #TYPE	DATABASE	USER	ADDRESS		METHOD
 host	all		all	192.168.0.0/16	md5
