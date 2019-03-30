@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "PostgreSQL Scripts" 
 date: 2019-03-19 12:49:40 
@@ -33,6 +33,10 @@ psql -h localhost -p 5432 -U postgres -d testdb
 
 -- excute sql script file
 \i F:/clean.sql
+
+-- create extension
+create extension "postgis";
+create extension "uuid-ossp";
 
 -- query data from table sys_role
 SELECT * FROM sys_role;
