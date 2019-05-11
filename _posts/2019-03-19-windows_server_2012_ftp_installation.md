@@ -3,7 +3,7 @@ layout: post
 title: "Windows Server 2012 FTP Installation" 
 date: 2019-03-19 12:46:26 
 author: Dewey Mao 
-categories: IIS 
+categories: Server 
 --- 
 Please read Reference   
  

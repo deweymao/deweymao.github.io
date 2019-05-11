@@ -3,7 +3,7 @@ layout: post
 title: "Register Application as Service" 
 date: 2019-05-11 10:29:47 
 author: Dewey Mao 
-categories: Solution 
+categories: Server 
 --- 
 
 ### instsrv.exe install srvany.exe

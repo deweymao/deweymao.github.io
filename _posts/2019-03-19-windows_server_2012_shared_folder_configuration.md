@@ -3,7 +3,7 @@ layout: post
 title: "Windows Server 2012 Shared Folder Configuration" 
 date: 2019-03-19 21:44:47 
 author: Dewey Mao 
-categories: IIS 
+categories: Server 
 --- 
 
 ### Delete user credential
