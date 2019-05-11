@@ -24,6 +24,7 @@ Displays the name of or changes the current directory: cd, for example: cd .. :r
 Microsoft system configuration: msconfig, for example: you can find boot item
 Restart or shutdown computer (remote desktop): shutdown -r -t 15 / shutdown -s -t 15
 Add startup application: shell:startup
+Open local group policy editor: gpedt.msc
 {% endhighlight %}
 
 ### Reference
