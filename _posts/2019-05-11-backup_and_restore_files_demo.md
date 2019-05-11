@@ -31,7 +31,7 @@ echo BACKUP SHARED FOLDER SUCCESS
 pause
 
 ```
-### Demo Rrestore Files
+### Demo Restore Files
 ```
 @ECHO OFF
 setlocal enabledelayedexpansion
