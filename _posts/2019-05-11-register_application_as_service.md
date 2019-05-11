@@ -21,7 +21,7 @@ Create: Parameters
 			|--AppParameters:	
 ```
 			
-### MOdify Service
+### Modify Service
 ```
 run: services.msc
 attribute: allow service to interact with desktop
