@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "Memo C++ Interfaces" 
 date: 2017-11-06 16:02:18 
@@ -113,3 +113,6 @@ Use TODO to comment the code that is NOT perfect, Temporary and to be done in th
 ...
 #endif //PROJECT_FILE_H_
 {% endhighlight %}
+
+### API-13 <a href="https://docs.microsoft.com/en-us/windows/win32/api/shlwapi/nf-shlwapi-urlescapea" target="_blank"> UrlEscapeA </a>
+Converts characters or surrogate pairs in a URL that might be altered during transport across the Internet ("unsafe" characters) into their corresponding escape sequences. 
