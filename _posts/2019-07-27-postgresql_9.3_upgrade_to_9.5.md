@@ -33,7 +33,7 @@ lc_messages = 'GBK'
 ```
 regedit: 9.5-ImagePath: -D D:\pg95_data
 
-### 4 stop 9.3 and 9.5 postgresql server
+### 4 stop 9.3 and 9.5 postgresql services
 
 ### 5 upgrade to 9.5
 ```
