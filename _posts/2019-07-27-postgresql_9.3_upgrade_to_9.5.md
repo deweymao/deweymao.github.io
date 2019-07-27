@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "PostgreSQL 9.3 upgrade to 9.5" 
 date: 2019-07-27 10:05:56 
@@ -53,5 +53,5 @@ pg_restore: [归档 (db)] could not execute query: ERROR:  could not find functi
 postgis 2.2 can not support all functions of postgis 2.1
  
 ### Reference 
-- <a href="http://www.bostongis.com/blog/index.php?/archives/268-Using-pg_upgrade-to-upgrade-PostGIS-without-installing-an-older-version-of-PostGIS.html" target="_blank"> PostgreSQL Archive </a> 
-
+- <a href="https://www.postgresql.org/docs/9.5/pgupgrade.html" target="_blank"> pg_upgrade </a> 
+- <a href="http://www.bostongis.com/blog/index.php?/archives/268-Using-pg_upgrade-to-upgrade-PostGIS-without-installing-an-older-version-of-PostGIS.html" target="_blank"> postgis problem </a> 
