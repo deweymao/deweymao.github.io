@@ -51,6 +51,66 @@ pg_restore: [归档 (db)] could not execute query: ERROR:  could not find functi
     AS '$libdir/postgis-2.1', '...
 ```
 postgis 2.2 can not support all functions of postgis 2.1
+
+### 7 temporary solution
+```
+@ECHO OFF
+setlocal enabledelayedexpansion
+set backup_folder=F:\BACKUP_DMMK
+set file_name_one=%date:~0,4%-%date:~5,2%-%date:~8,2%-DMMKDB.dump
+set file_name_two=%date:~0,4%-%date:~5,2%-%date:~8,2%-RDB_ShellGeom.sql
+set file_name_thr=%date:~0,4%-%date:~5,2%-%date:~8,2%-RDB_ShellGeom_data
+
+set host_name=localhost
+set port_name=5432
+set user_name=postgres
+set db_name=DMMKDB
+
+echo BACKUP DMMKDB
+pg_dump --inserts -T "\"RDB_ShellGeom\"" -h !host_name! -p !port_name! -U !user_name! -Fc !db_name! > !backup_folder!\!file_name_one!
+pg_dump -s -t "\"RDB_ShellGeom\"" -h !host_name! -p !port_name! -U !user_name! !db_name! > !backup_folder!\!file_name_two!
+psql -h !host_name! -p !port_name! -U !user_name! -d !db_name! -c "copy "\"RDB_ShellGeom\"" to '!backup_folder!\!file_name_thr!' Binary;"
+echo BACKUP DMMKDB SUCCESS
+
+pause
+```
+
+```
+@ECHO OFF
+setlocal enabledelayedexpansion
+set backup_folder=F:\BACKUP_DMMK
+set file_name_one=%date:~0,4%-%date:~5,2%-%date:~8,2%-DMMKDB.dump
+set file_name_two=%date:~0,4%-%date:~5,2%-%date:~8,2%-RDB_ShellGeom.sql
+set file_name_thr=%date:~0,4%-%date:~5,2%-%date:~8,2%-RDB_ShellGeom_data
+
+set host_name=localhost
+set port_name=5432
+set user_name=postgres
+set db_name=DMMKDB
+
+echo DROPDB DMMKDBtest
+dropdb -h !host_name! -p !port_name! -U !user_name! !db_name!
+echo DROPDB DMMKDBtest SUCCESS
+pause
+
+echo CREATEDB DMMKDBtest
+createdb -h !host_name! -p !port_name! -U !user_name! !db_name!
+echo CREATEDB DMMKDBtest SUCCESS
+
+echo CREATE EXTENSION
+psql -h !host_name! -p !port_name! -U !user_name! -d !db_name! -c "create extension "postgis";"
+psql -h !host_name! -p !port_name! -U !user_name! -d !db_name! -c "create extension ""uuid-ossp"";"
+echo CREATE EXTENSION SUCCESS
+
+echo RESTORE FROM DMMKDB
+pg_restore -h !host_name! -p !port_name! -U !user_name! -d !db_name! !backup_folder!\!file_name_one!
+psql -h !host_name! -p !port_name! -U !user_name! -d !db_name! -f !backup_folder!\!file_name_two!
+psql -h !host_name! -p !port_name! -U !user_name! -d !db_name! -c "copy "\"RDB_ShellGeom\"" from '!backup_folder!\!file_name_thr!' Binary;"
+echo RESTORE FROM DMMKDB SUCCESS
+
+pause
+```
+
  
 ### Reference 
 - <a href="https://www.postgresql.org/docs/9.5/pgupgrade.html" target="_blank"> pg_upgrade </a> 
