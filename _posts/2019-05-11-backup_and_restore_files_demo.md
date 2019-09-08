@@ -23,6 +23,7 @@ echo BACKUP DMMKDB SUCCESS
 
 echo BACKUP SHARED FOLDER
 echo \test\ > !backup_folder!\list_of_exclusion.txt
+echo \test1\ >> !backup_folder!\list_of_exclusion.txt
 mkdir !backup_folder!\!folder_name!
 xcopy \\!host_name!\shared_attachment !backup_folder!\!folder_name! /s /e /y /exclude:!backup_folder!\list_of_exclusion.txt
 del !backup_folder!\list_of_exclusion.txt
