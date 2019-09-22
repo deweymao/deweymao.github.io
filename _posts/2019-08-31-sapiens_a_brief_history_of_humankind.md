@@ -3,7 +3,7 @@ layout: post
 title: "《人类简史·从动物到上帝》- 尤瓦尔·赫拉利" 
 date: 2019-08-31 22:16:51 
 author: Dewey Mao 
-categories: BOOK 
+categories: Book 
 --- 
 #### 尤瓦尔·赫拉利
 1976年生于以色列，牛津大学历史学博士，青年怪才、全球瞩目的新锐历史学家。
