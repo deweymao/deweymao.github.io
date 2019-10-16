@@ -5,7 +5,7 @@ date: 2019-10-16 20:49:44
 author: Dewey Mao 
 categories: Management 
 --- 
-#### Definition
+### Definition
 The SWOT analysis is an extremely useful tool for understanding and decision-making for all sorts of situations in business and organizations.   
 - S - Strengths
 - W - Weaknesses
@@ -15,17 +15,17 @@ The SWOT analysis is an extremely useful tool for understanding and decision-mak
 By definition, Strengths (S) and Weaknesses (W) are considered to be internal factors over which you have some measure of control.    
 by definition, Opportunities (O) and Threats (T) are considered to be external factors over which you have essentially no control.   
 
-#### Strengths and Weaknesses
+### Strengths and Weaknesses
 The internal environment - the situation inside the company or organization.    
 For example: factors relating to products, pricing, costs, profitability, performance, quality, people, skills, adaptability, brands, services, reputation, processes, infrastructure, etc.   
 Factors tend to be in the present.   
 
-#### Opportunities and Threats
+### Opportunities and Threats
 The external environment - the situation outside the company or organization.   
 For example: factors relating to markets, sectors, audience, fashion, seasonality, trends, competition, economics, politics, society, culture, technology, environmental, media, law, etc.   
 Factors tend to be in the future.   
 
-#### HOW to face
+### HOW to face
 Enhance SO, eliminate WT.
 
 ### Reference 
