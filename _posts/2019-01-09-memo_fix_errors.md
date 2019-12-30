@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "Memo Fix Errors" 
 date: 2019-01-09 17:21:00 
@@ -25,8 +25,8 @@ new AllowEncryptionOracle(DWORD 32) = 2
 Maybe need to modify "not using FTP passive mode": IE explorer -> Setting -> Internet option -> Advanced -> Unchecked "using passive FTP".   
 
 #### Error-3 FTP server: 451 No mapping for unicode character exists in the target multi-byte code page.
-IIS -> FTP setting -> Advanced setting -> Allow UTF-8 = false   
- 
-### Reference 
-- <a href="" target="_blank">  </a> 
-- <a href="" target="_blank">  </a> 
+IIS -> FTP setting -> Advanced setting -> Allow UTF-8 = false  
+
+#### Error-4 Unable to access shared folder - net use \\172.16.14.28 return System error 1272.   
+gpedit.msc -> computer configuration -> management template -> network -> Lanman workstation:   
+Enable unsafe Guest login - enabled. 
