@@ -31,7 +31,7 @@ Maybe need to modify "not using FTP passive mode": IE explorer -> Setting -> Int
 IIS -> FTP setting -> Advanced setting -> Allow UTF-8 = false  
 ```
 
-#### Error-4 Unable to access shared folder - net use \\172.16.14.28 return System error 1272. 
+#### Error-4 Unable to access shared folder - net use \\\\IP return System error 1272. 
 ```  
 gpedit.msc -> computer configuration -> management template -> network -> Lanman workstation:   
 Enable unsafe Guest login - enabled. 
