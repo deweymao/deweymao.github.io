@@ -84,17 +84,4 @@ for /d %%d in (%backup_folder%\*) do (
 	)	
 	pause
 )
-
-
-
-	
-	
-
-
-
-
-
-
-
-
 ```
