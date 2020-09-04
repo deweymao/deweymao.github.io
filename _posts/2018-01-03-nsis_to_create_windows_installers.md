@@ -1,4 +1,4 @@
---- 
+﻿--- 
 layout: post 
 title: "NSIS to Create Windows Installers" 
 date: 2018-01-03 16:04:37 
@@ -19,3 +19,6 @@ NSIS is a free scriptable win32 installer/uninstaller system that doesn't suck a
 
 ### <a href="http://nsis.sourceforge.net/Category:Code_Examples" target="_balnk"> Code Example </a>
 Here you can find examples of NSIS scripts. Normally each example comes to show one aspect of NSIS scripting. 
+
+### <a href="https://nsis.sourceforge.io/Special_Builds" target="_blank"> Large Strings Build </a>
+If you are working with large strings use this build which has a maximum string length of 8192 bytes instead of the default of 1024 bytes.
