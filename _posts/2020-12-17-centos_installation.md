@@ -28,7 +28,8 @@ modify system boot order.
 SWAP：extended memory，32GB（2 times memory）
 /home: user data,120GB
 /var: log data, 20GB
-```   
+```
+       
 ### Network Configuration
 ```
 //look up network card
