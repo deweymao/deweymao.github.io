@@ -6,14 +6,16 @@ author: Dewey Mao
 categories: Tomcat 
 --- 
 ### Tomcat/conf/server.xml
-- modify port 80
-```
+- modify port 80   
+```   
 <Connector port="80" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
-```
-- add host context
-```
+```   
+
+- add host context   
+```   
+
 <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
@@ -24,13 +26,14 @@ categories: Tomcat
 	<Context path="" docBase="/home/dimine/deploy/apache-tomcat-8.5.61/webapps/web" debug="0" reloadable="true"></Context>
 
       </Host>
-```
-- open server port 80
-```
+```   
+
+- open server port 80   
+```   
 firewall-cmd --query-port=80/tcp
 firewall-cmd --add-port=80/tcp --permanent
 firewall-cmd --reload
 firewall-cmd --query-port=80/tcp
-```
+```   
 
-- restart tomcat server
+- restart tomcat server   
