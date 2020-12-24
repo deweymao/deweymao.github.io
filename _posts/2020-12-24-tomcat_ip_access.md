@@ -13,19 +13,17 @@ categories: Tomcat
 ```   
 
 - add host context   
+
 ```   
 <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
-
-	<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
-		prefix="localhost_access_log" suffix=".txt"
-               		pattern="%h %l %u %t &quot;%r&quot; %s %b" />
-
+	<!-- add -->
 	<Context path="" docBase="/home/dimine/deploy/apache-tomcat-8.5.61/webapps/web" debug="0" reloadable="true"></Context>
 
-</Host>
+</Host>   
 ```   
 
 - open server port 80   
+
 ```   
 firewall-cmd --query-port=80/tcp
 firewall-cmd --add-port=80/tcp --permanent
