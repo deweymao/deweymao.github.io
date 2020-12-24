@@ -7,25 +7,22 @@ categories: Tomcat
 --- 
 ### Tomcat/conf/server.xml
 - modify port 80   
+
 ```   
-<Connector port="80" protocol="HTTP/1.1"
-               connectionTimeout="20000"
-               redirectPort="8443" />
+<Connector port="80" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />
 ```   
 
 - add host context   
 ```   
+<Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
 
-<Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true">
-
-        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
-               prefix="localhost_access_log" suffix=".txt"
-               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+	<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+		prefix="localhost_access_log" suffix=".txt"
+               		pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
 	<Context path="" docBase="/home/dimine/deploy/apache-tomcat-8.5.61/webapps/web" debug="0" reloadable="true"></Context>
 
-      </Host>
+</Host>
 ```   
 
 - open server port 80   
