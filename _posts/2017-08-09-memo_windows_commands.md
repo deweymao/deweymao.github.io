@@ -25,6 +25,9 @@ Microsoft system configuration: msconfig, for example: you can find boot item
 Restart or shutdown computer (remote desktop): shutdown -r -t 15 / shutdown -s -t 15
 Add startup application: shell:startup
 Open local group policy editor: gpedt.msc
+Query program port: netstat -aon | findstr "5050"
+Query program process: tasklist | findstr "11740"
+Kill program process: taskkill /PID 11740 -T -F
 {% endhighlight %}
 
 ### Reference
